@@ -1,0 +1,56 @@
+{
+    "name": "erwane/whep-mailgun",
+    "description": "Mailgun (Sinch) webhooks handler",
+    "type": "library",
+    "keywords": [
+        "webhook",
+        "mailgun",
+        "sinch"
+    ],
+    "homepage": "https://github.com/Erwane/whep-mailgun",
+    "support": {
+        "issues": "https://github.com/Erwane/whep-mailgun/issues",
+        "source": "https://github.com/Erwane/whep-mailgun"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Erwane",
+            "email": "erwane@phea.fr",
+            "homepage": "https://erwane-breton.fr"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "dflydev/dot-access-data": "^3.0",
+        "erwane/whep-client": "^2.2"
+    },
+    "require-dev": {
+        "cakephp/cakephp-codesniffer": "^5.0",
+        "erwane/phpunit-resource-helper": "^2.0",
+        "phpunit/phpunit": "^10.5",
+        "symfony/var-dumper": "^v6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WHEP\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WHEP\\Test\\": "tests/"
+        }
+    },
+    "config": {
+        "platform-check": true,
+        "sort-packages": true,
+        "prefered-install": "dist",
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "cscheck": "php vendor/bin/phpcs -p -s src tests",
+        "csfix": "php vendor/bin/phpcbf src tests"
+    }
+}

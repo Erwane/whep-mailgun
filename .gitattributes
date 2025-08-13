@@ -1,0 +1,14 @@
+/.github/               export-ignore
+/docs/                  export-ignore
+/tests/                 export-ignore
+.editorconfig           export-ignore
+.gitattributes          export-ignore
+.gitignore              export-ignore
+.composer.lock          export-ignore
+/grumphp.yml            export-ignore
+/phpcs.xml              export-ignore
+/phpunit.xml.dist       export-ignore
+
+# Define the line ending behavior of the different file extensions
+# Set default behavior, in case users don't have core.autocrlf set.
+* text text=auto eol=lf
