@@ -1,0 +1,19 @@
+{
+    "signature": {
+        "token": "dd41c2a1f4184cb45a9b3ac652e245d587a9d2425cc55d31af",
+        "timestamp": "1754980063",
+        "signature": "4f91c00a53a4e28ba1e181c2a8bd149104985cf8ca25b70fdffa3aa1b349d6d3"
+    },
+    "event-data": {
+        "event": "failed",
+        "id": "Fs7-5t81S2ispqxqDw2U4Q",
+        "timestamp": 1521472262.908181,
+        "severity": "permanent",
+        "reason": "blacklisted",
+        "delivery-status": {
+            "code": 452,
+            "message": "4.2.2 https://support.example.com/mail/?p=422"
+        },
+        "recipient": "alice@example.com"
+    }
+}

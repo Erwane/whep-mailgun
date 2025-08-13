@@ -1,0 +1,20 @@
+{
+    "signature": {
+        "token": "4716b0e40e58ef124a7db77e3b030e76eb75cc678fc94da43c",
+        "timestamp": "1754980068",
+        "signature": "a60e259d045251f3a00539f52e42d0c6682e8ca89ac4194de5eb58251a42d711"
+    },
+    "event-data": {
+        "event": "failed",
+        "id": "G9Bn5sl1TC6nu79C8C0bwg",
+        "timestamp": 1521233195.375624,
+        "severity": "permanent",
+        "reason": "bounce",
+        "delivery-status": {
+            "code": 650,
+            "message": "",
+            "description": "Not delivering to previously bounced address"
+        },
+        "recipient": "alice@example.com"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "signature": {
+        "token": "6a9ff2c911a982dd75636d5a5bc76303968e484129d256a426",
+        "timestamp": "1754980081",
+        "signature": "499d62adc979703c95210dc4b276726be861c2e55bf707eb22e3c3d44f06b15a"
+    },
+    "event-data": {
+        "event": "accepted",
+        "id": "nIKIiE5URaSr-8WsuiCrBB",
+        "timestamp": 1521472262.908181,
+        "flags": {
+            "is-authenticated": true,
+            "is-test-mode": false
+        },
+        "recipient": "alice@example.com"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "signature": {
+        "token": "d696358948fd26ec7646b79b37b29a7479be1ea7cf4d4bf428",
+        "timestamp": "1754980075",
+        "signature": "d6a22f28cb1d522fedee17c3e69d3154dbd20d28656de160260bf2a9e313b042"
+    },
+    "event-data": {
+        "event": "complained",
+        "id": "-Agny091SquKnsrW2NEKUA",
+        "timestamp": 1521233123.501324,
+        "recipient": "alice@example.com"
+    }
+}
