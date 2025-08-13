@@ -10,16 +10,15 @@ declare(strict_types=1);
 
 namespace WHEP\Test\TestCase;
 
-use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use ResourceHelper\File;
 use WHEP\Exception\SecurityException;
 use WHEP\Factory;
-use WHEP\Provider\Mailgun;
 use WHEP\ProviderInterface;
 
-#[CoversClass(Mailgun::class)]
+/**
+ * @covers \WHEP\Provider\Mailgun
+ */
 class MailgunTest extends TestCase
 {
     private function _appendSignature(array $data): array
@@ -91,7 +90,9 @@ class MailgunTest extends TestCase
         ];
     }
 
-    #[DataProvider('dataTypesMap')]
+    /**
+     * @dataProvider dataTypesMap
+     */
     public function testTypesMap($data, $expected): void
     {
         $p = Factory::provider('mailgun', ['signing_key' => TEST_SIGNING_KEY]);
@@ -166,7 +167,9 @@ class MailgunTest extends TestCase
         ];
     }
 
-    #[DataProvider('dataTypeFromRules')]
+    /**
+     * @dataProvider dataTypeFromRules
+     */
     public function testTypeFromRules($data, $expected): void
     {
         $p = Factory::provider('mailgun', ['signing_key' => TEST_SIGNING_KEY]);
@@ -254,7 +257,9 @@ class MailgunTest extends TestCase
         ];
     }
 
-    #[DataProvider('dataLoad')]
+    /**
+     * @dataProvider dataLoad
+     */
     public function testLoad($resource, $type, $recipient, $details, $smtp, $url): void
     {
         $json = File::getContent($resource);

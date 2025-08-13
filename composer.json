@@ -21,14 +21,14 @@
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "8.0.*",
         "dflydev/dot-access-data": "^3.0",
-        "erwane/whep-client": "^2.2"
+        "erwane/whep-client": "~2.0.1"
     },
     "require-dev": {
-        "cakephp/cakephp-codesniffer": "^5.0",
+        "cakephp/cakephp-codesniffer": "^4.0",
         "erwane/phpunit-resource-helper": "^2.0",
-        "phpunit/phpunit": "^10.5",
+        "phpunit/phpunit": "^9.6",
         "symfony/var-dumper": "^v6.0"
     },
     "autoload": {
