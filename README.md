@@ -1,8 +1,8 @@
 # [Mailgun](https://www.mailgun.com/) (Sinch) webhook handler for [WHEP](https://github.com/Erwane/whep-mailgun) project
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![codecov](https://codecov.io/gh/Erwane/whep-mailgun/branch/2.0/graph/badge.svg?token=BM0HFGK9KI)](https://codecov.io/gh/Erwane/whep-mailgun)
-[![CI](https://github.com/Erwane/whep-mailgun/actions/workflows/ci.yml/badge.svg?branch=2.0)](https://github.com/Erwane/whep-mailgun/actions)
+[![codecov](https://codecov.io/gh/Erwane/whep-mailgun/branch/1.x/graph/badge.svg?token=BM0HFGK9KI)](https://codecov.io/gh/Erwane/whep-mailgun)
+[![CI](https://github.com/Erwane/whep-mailgun/actions/workflows/ci.yml/badge.svg?branch=1.x)](https://github.com/Erwane/whep-mailgun/actions)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/Erwane/whep-mailgun)](https://packagist.org/packages/Erwane/whep-mailgun)
 [![Packagist Version](https://img.shields.io/packagist/v/Erwane/whep-mailgun)](https://packagist.org/packages/Erwane/whep-mailgun)
 

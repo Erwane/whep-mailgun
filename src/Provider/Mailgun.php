@@ -22,7 +22,7 @@ use WHEP\ProviderInterface;
  */
 class Mailgun extends AbstractProvider
 {
-    protected array $_typesMap = [
+    protected $_typesMap = [
         'accepted' => ProviderInterface::EVENT_REQUEST,
         'delivered' => ProviderInterface::EVENT_SENT,
         'bounce_soft' => ProviderInterface::EVENT_BOUNCE_SOFT,
@@ -33,9 +33,12 @@ class Mailgun extends AbstractProvider
         'complained' => ProviderInterface::EVENT_ABUSE,
     ];
 
-    protected array $_allowedIpAndNetwork = [];
+    protected $_allowedIpAndNetwork = [];
 
-    protected array $_typeRules = [
+    /**
+     * @var array<array>
+     */
+    protected $_typeRules = [
         [
             'type' => ProviderInterface::EVENT_BOUNCE_HARD,
             'rules' => [
@@ -92,7 +95,7 @@ class Mailgun extends AbstractProvider
     /**
      * @inheritDoc
      */
-    public function checkSecurity(array $data): self
+    public function checkSecurity(array $data): ProviderInterface
     {
         $signature = $data['signature'] ?? [
             'token' => null,
@@ -179,7 +182,7 @@ class Mailgun extends AbstractProvider
      * @param string|bool|null $value Event value
      * @return bool
      */
-    protected function _applyRule(mixed $rule, string|bool|null $value): bool
+    protected function _applyRule($rule, $value): bool
     {
         if (is_array($rule)) {
             $pass = $this->_ruleExpectedArray($rule, $value);
@@ -197,7 +200,7 @@ class Mailgun extends AbstractProvider
      * @param string|bool|null $value Event value
      * @return bool
      */
-    protected function _ruleExpectedArray(array $expected, string|bool|null $value): bool
+    protected function _ruleExpectedArray(array $expected, $value): bool
     {
         foreach ($expected as $item) {
             if ($this->_ruleExpectedValue($item, $value)) {
@@ -215,7 +218,7 @@ class Mailgun extends AbstractProvider
      * @param string|bool|null $value Event value
      * @return bool
      */
-    protected function _ruleExpectedValue(string|bool|null $expected, string|bool|null $value): bool
+    protected function _ruleExpectedValue($expected, $value): bool
     {
         return $expected === $value;
     }

@@ -21,15 +21,15 @@
         }
     ],
     "require": {
-        "php": "8.0.*",
+        "php": "^7.2",
         "dflydev/dot-access-data": "^3.0",
-        "erwane/whep-client": "~2.0.1"
+        "erwane/whep-client": "^1.2"
     },
     "require-dev": {
         "cakephp/cakephp-codesniffer": "^4.0",
-        "erwane/phpunit-resource-helper": "^2.0",
-        "phpunit/phpunit": "^9.6",
-        "symfony/var-dumper": "^v6.0"
+        "erwane/phpunit-resource-helper": "^1.0",
+        "phpunit/phpunit": "^8.5",
+        "symfony/var-dumper": "^v5.0"
     },
     "autoload": {
         "psr-4": {
